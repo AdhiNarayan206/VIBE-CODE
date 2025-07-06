@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VIBE-CODE/static/css/main.aba43e03.css",
+    "main.js": "/VIBE-CODE/static/js/main.6fdb5371.js",
+    "index.html": "/VIBE-CODE/index.html",
+    "main.aba43e03.css.map": "/VIBE-CODE/static/css/main.aba43e03.css.map",
+    "main.6fdb5371.js.map": "/VIBE-CODE/static/js/main.6fdb5371.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aba43e03.css",
+    "static/js/main.6fdb5371.js"
+  ]
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0">
+  <defs>
+    <audio id="bell-sound">
+      <!-- This is a placeholder. In a real app, you would use an actual audio file. -->
+      <!-- The SVG format doesn't actually support embedded audio that works across browsers. -->
+      <!-- In a production app, you would include an MP3 or WAV file instead. -->
+    </audio>
+  </defs>
+</svg>
