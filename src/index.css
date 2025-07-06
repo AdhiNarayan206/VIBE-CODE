@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter text-dozy-text-light bg-dozy-background-light transition-colors duration-300 ease-in-out;
+  }
+
+  .dark body {
+    @apply text-dozy-text-dark bg-dozy-background-dark;
+  }
+  
+  /* Ensure dark mode is applied properly */
+  :root.dark body {
+    @apply bg-dozy-background-dark text-dozy-text-dark;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-bold;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white dark:bg-dozy-surface-dark rounded-3xl shadow-soft dark:shadow-soft-dark p-6 transition-all duration-300 hover:shadow-[0_0_20px_rgba(93,187,138,0.25)] dark:hover:shadow-[0_0_25px_rgba(93,187,138,0.3)];
+  }
+
+  .glass-card {
+    @apply bg-white/70 dark:bg-dozy-surface-dark/70 backdrop-blur-sm rounded-3xl shadow-soft dark:shadow-soft-dark p-6 transition-all duration-300 hover:shadow-[0_0_20px_rgba(93,187,138,0.2)] dark:hover:shadow-[0_0_25px_rgba(93,187,138,0.35)];
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-2xl font-medium transition-all duration-200 transform hover:scale-105 active:scale-95;
+  }
+
+  .btn-primary {
+    @apply btn bg-dozy-lavender text-white hover:bg-dozy-lavender-dark hover:shadow-[0_0_15px_rgba(158,158,255,0.5)];
+  }
+
+  .btn-secondary {
+    @apply btn bg-dozy-sage text-white hover:bg-dozy-sage-dark hover:shadow-[0_0_15px_rgba(93,187,138,0.5)];
+  }
+
+  .btn-tertiary {
+    @apply btn bg-dozy-peach text-white hover:bg-dozy-peach-dark hover:shadow-[0_0_15px_rgba(255,189,136,0.5)];
+  }
+
+  .btn-ghost {
+    @apply btn bg-transparent hover:bg-gray-100/30 dark:hover:bg-gray-700/30 hover:shadow-[0_0_10px_rgba(93,187,138,0.3)] dark:hover:shadow-[0_0_15px_rgba(93,187,138,0.4)];
+  }
+
+  .input {
+    @apply px-4 py-2 rounded-xl border border-gray-200 dark:border-gray-600 bg-white dark:bg-dozy-surface-dark focus:outline-none focus:ring-2 focus:ring-dozy-sage dark:focus:ring-dozy-sage focus:shadow-[0_0_10px_rgba(93,187,138,0.3)] dark:focus:shadow-[0_0_15px_rgba(93,187,138,0.4)] transition-all duration-200;
+  }
+
+  .checkbox {
+    @apply w-5 h-5 rounded-lg border-2 border-dozy-sage checked:bg-dozy-sage transition-all duration-200;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(93, 187, 138, 0.5);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(93, 187, 138, 0.8);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: rgba(93, 187, 138, 0.6);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(93, 187, 138, 0.9);
+}
